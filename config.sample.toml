@@ -44,4 +44,5 @@ rename = "{year}/{month}/upgit_{year}{month}{day}_{unix_ts}{ext}"
 username = "he_zhaofeng"
 repo = "markdownImagee"
 # https://gitee.com/profile/personal_access_tokens/new
-access_token = "c825d0844f18683107721e73cc109700"
+# c825d0844f18683107721e73cc109700
+access_token = "hzfhqgitee"
