@@ -87,9 +87,9 @@ prefix = "https://cdn.mydomain.com/"
 # Gitee
 [uploaders.gitee]
 username = "username"
-repo = "repo-name"
+repo = "markdownImagee"
 # https://gitee.com/profile/personal_access_tokens/new
-access_token = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+access_token = "2582942b8c59a7ada2857a7899430ab3"
 
 [uploaders.cloudinary]
 cloud_name = "my_cloud"
