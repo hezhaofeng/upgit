@@ -1,69 +1,67 @@
 # =============================================================================
-# UPGIT 配置
+# UPGIT Config
 # =============================================================================
 
-# 默认上传器
+# default uploader id
 default_uploader = "github"
 
-# 上传文件名的格式模板（仅特定上传器适配）
-#   / 目录分隔符, 作用: 是区分目录
-#   {year} 年份, 例如: 2022
-#   {month} 月份, 例如: 02
-#   {day} 天, 例如: 01
-#   {unix_ts} 时间戳, 例如: 1643617626
-#   {fname} 原始文件名，如 logo (不含后缀名)
-#   {fname_hash} {fname}的 MD5 散列值
-#   {ext} 文件后缀名, 例如.png
-#   下面的例子生成的文件名预览: 2022/01/upgit_20220131_1643617626.png
-#   如果目录不存在将会被程序自动创建
+# The file name formatting template was uploaded
+#   / The directory separator is used to distinguish directories
+#   {year} Year, for example: 2022
+#   {month} Month, for example: 02
+#   {day} Day, for example: 01
+#   {unix_ts} Time stamp, for example: 1643617626
+#   {fname} Original file name, such as logo (without suffix)
+#   {fname_hash} MD5 hash value of {fname}
+#   {ext} File name suffix, for example: .png
+#   The following example generates a file name preview: 2022/01/upgit_20220131_1643617626.png
 rename = "{year}/{month}/upgit_{year}{month}{day}_{unix_ts}{ext}"
 
-
 # -----------------------------------------------------------------------------
-# 自定义输出格式
+# Custom extra output formats
 # -----------------------------------------------------------------------------
-#   {url} 图片文件的网络URL地址
+#   {url} direct URL of the file
 [output_formats]
 "bbcode" = "[img]{url}[/img]"
 "html" = '<img src="{url}" />'
 "markdown-simple" = "![]({url})"
 
 # -----------------------------------------------------------------------------
-# 直链替换规则 RawUrl -[replace]-> Url
+# URL replacing rules. RawUrl -[replace]-> Url
 # -----------------------------------------------------------------------------
 
-# 如果您的网络访问Github异常或者缓慢，您可以尝试下面的配置以开启CDN加速
+# If your network access to Github is abnormal or sluggish, you can try the following CDN acceleration.
 # [replacements]
 # "raw.githubusercontent.com" = "cdn.jsdelivr.net/gh"
 # "/master" = "@master"
 
 # =============================================================================
-# 以下为各个上传器的配置示例. 用不到的留空即可
+# Configurations examples for some uploaders, leave them blank if not used
 # =============================================================================
 
-# Github 上传器
+# Github uploader
 [uploaders.github]
-# 保存文件的分支，例如 master 或 main
+# Branch to save files, for example master or main
 branch = "master"
 
-# 您的拥有"repo"权限的 Github 令牌
-# 获取Github Token连接: https://github.com/settings/tokens
-pat = "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"
+# "pat" enter the Github token that has the "repo" permission
+# Get token from https://github.com/settings/tokens
+pat = "ghp_XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
 
-# 您的公共Github存储库的名称
-# 注意: 为了让您和他人可以访问到图片资源, 您的Github仓库一定要是公开的, 
-#       在私有仓库中Github会拦截未授权的请求,你将会得到一个404.
-repo = "upgitimage"
+# The name of your public Github repository
+# Attention: In order for you and others to access image resources, your Github repository must be public.
+#            In private repositories Github blocks unauthorized requests and you will get a 404.
+repo = "repo-name"
 
-# 您的 Gtihub 用户名 
-username = "hezhaofeng"
+# your Github username  
+username = "username"
 
-# SMMS 上传器
+# SMMS Uploader
 [uploaders.smms]
 # Get token from https://sm.ms/home/apitoken
 token = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 
-# Imgur 上传器
+# Imgur Uploader
 [uploaders.imgur]
 # Get token from https://api.imgur.com/oauth2/addclient
 # See your apps in https://imgur.com/account/settings/apps
@@ -71,16 +69,16 @@ client_id = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 
 # Chevereto Uploader
 [uploaders.chevereto]
-upload_url = "https://chevereto.com/api/v1/upload"
 key = "c8f8f8f8f8f8f8f8f8f8f8f8f8f8f8f8f8f8f8f8"
+upload_url = "https://chevereto.com/api/v1/upload"
 
-# 腾讯云 COS
+# Qcloudcos Uploader
 [uploaders.qcloudcos]
 host = "xxx.cos.ap-chengdu.myqcloud.com"
 secret_id = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 secret_key= "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 
-# 七牛云存储
+# Qiniu cloud
 [uploaders.qiniu]
 # Generate Token: http://jsfiddle.net/gh/get/extjs/4.2/icattlecoder/jsfiddle/tree/master/uptoken
 token = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx:xxxxxxxxxxxxxxxxxxxxxxxxxxx:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx=="
@@ -88,10 +86,10 @@ prefix = "https://cdn.mydomain.com/"
 
 # Gitee
 [uploaders.gitee]
-username = "username"
-repo = "repo-name"
+username = "he_zhaofeng"
+repo = "markdownImage"
 # https://gitee.com/profile/personal_access_tokens/new
-access_token = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+access_token = "8c16af57b9110a9618df9f27dc94ebc7"
 
 [uploaders.cloudinary]
 cloud_name = "my_cloud"
