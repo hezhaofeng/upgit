@@ -3,7 +3,7 @@
 # =============================================================================
 
 # 默认上传器
-default_uploader = "gitee"
+default_uploader = "uploaders.gitee"
 
 # 上传文件名的格式模板（仅特定上传器适配）
 #   / 目录分隔符, 作用: 是区分目录
@@ -88,7 +88,7 @@ prefix = "https://cdn.mydomain.com/"
 
 # Gitee
 [uploaders.gitee]
-username = "he-zhaofeng"
+username = "he_zhaofeng"
 repo = "markdownImage"
 # https://gitee.com/profile/personal_access_tokens/new
 access_token = "7a1ff628736c81db94996c5f4f20e3a2"
