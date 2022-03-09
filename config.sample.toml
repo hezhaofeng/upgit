@@ -1,6 +1,6 @@
 rename = "{year}/{month}/upgit_{year}{month}{day}_{unix_ts}{ext}"
 [uploaders.gitee]
-username = "he-zhaofeng"
+username = "he_zhaofeng"
 repo = "markdownImage"
 # https://gitee.com/profile/personal_access_tokens/new
 access_token = "8c16af57b9110a9618df9f27dc94ebc7"
