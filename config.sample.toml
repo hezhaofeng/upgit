@@ -91,7 +91,7 @@ prefix = "https://cdn.mydomain.com/"
 username = "he-zhaofeng"
 repo = "markdownImage"
 # https://gitee.com/profile/personal_access_tokens/new
-access_token = "7a1ff628736c81db94996c5f4f20e3a2"
+access_token = "8c16af57b9110a9618df9f27dc94ebc7"
 
 [uploaders.cloudinary]
 cloud_name = "my_cloud"
