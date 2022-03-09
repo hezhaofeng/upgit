@@ -3,7 +3,7 @@
 # =============================================================================
 
 # default uploader id
-default_uploader = "he_zhaofeng"
+default_uploader = "Gitee"
 
 # The file name formatting template was uploaded
 #   / The directory separator is used to distinguish directories
