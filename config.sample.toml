@@ -3,7 +3,7 @@
 # =============================================================================
 
 # default uploader id
-default_uploader = "github"
+default_uploader = "he_zhaofeng"
 
 # The file name formatting template was uploaded
 #   / The directory separator is used to distinguish directories
@@ -45,4 +45,4 @@ username = "he_zhaofeng"
 repo = "markdownImagee"
 # https://gitee.com/profile/personal_access_tokens/new
 # c825d0844f18683107721e73cc109700
-access_token = "hzfhqgitee"
+access_token = "7a1ff628736c81db94996c5f4f20e3a2"
